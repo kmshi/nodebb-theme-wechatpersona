@@ -1,0 +1,22 @@
+{
+  "dependencies": {},
+  "description": "Wechat Persona Theme for NodeBB",
+  "devDependencies": {},
+  "homepage": "https://github.com/kmshi/nodebb-theme-wechatpersona#readme",
+  "keywords": [
+    "wechat",
+    "persona",
+    "nodebb",
+    "theme",
+    "themes"
+  ],
+  "license": "BSD-2-Clause",
+  "main": "theme.less",
+  "name": "nodebb-theme-wechatpersona",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmshi/nodebb-theme-wechatpersona.git"
+  },
+  "version": "1.0.0"
+}

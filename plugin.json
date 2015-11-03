@@ -1,0 +1,14 @@
+{
+	"id": "nodebb-theme-wechatpersona",
+	"hooks": [
+	],
+	"staticDirs": {
+		"vendor": "static/vendor"
+	},
+	"css": [
+	  "static/vendor/css/sidebar.css"
+	],
+	"scripts": [
+	  "static/vendor/js/sidebar.js"
+	]
+}

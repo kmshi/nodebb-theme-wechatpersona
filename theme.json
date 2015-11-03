@@ -1,0 +1,8 @@
+{
+    "id": "nodebb-theme-wechatpersona",
+    "baseTheme":"nodebb-theme-persona",
+    "name": "Wechat Persona Theme for NodeBB",
+    "description": "A wechat version persona theme with some small hotfixes with baseTheme to persona",
+    "url": "https://www.github.com/kmshi/nodebb-theme-wechatpersona",
+    "screenshot": "screenshot.png"
+}
