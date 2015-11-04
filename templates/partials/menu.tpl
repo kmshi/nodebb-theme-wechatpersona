@@ -1,5 +1,5 @@
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="sidebar" data-target=".sidebar">
+				<button type="button" class="navbar-toggle" data-toggle="slide-in" data-target=".navbar-slide-in">
 					<span class="notification-icon fa fa-fw fa-bell-o" data-content="0"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -20,11 +20,11 @@
 				</div>
 			</div>
 
-			<div class="col-xs-7 col-sm-3 col-md-2 sidebar sidebar-right sidebar-animate" id="nav-dropdown">
+			<div class="navbar-slide-in" id="nav-dropdown">
 				<!-- IF !maintenanceHeader -->
 				<!-- IF loggedIn -->
 
-				<ul id="logged-in-menu" class="nav navbar-nav">
+				<ul id="logged-in-menu" class="nav navbar-nav navbar-right">
 					<li id="user_label" class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="user_dropdown" title="[[global:header.profile]]">
 							<img id="user-header-picture" src="{user.picture}"/> <span id="user-header-name" class="visible-xs-inline">{user.username}</span>
@@ -63,7 +63,7 @@
 						</ul>
 					</li>
 				</ul>
-				<ul id="logged-in-menu" class="nav navbar-nav">
+				<ul id="logged-in-menu" class="nav navbar-nav navbar-right">
 					<li class="notifications dropdown text-center hidden-xs">
 						<a href="#" title="[[global:header.notifications]]" class="dropdown-toggle" data-toggle="dropdown" id="notif_dropdown">
 							<i class="notification-icon fa fa-fw fa-bell-o" data-content="0"></i>
@@ -111,7 +111,7 @@
 					<!-- ENDIF !disableChat -->
 				</ul>
 				<!-- ELSE -->
-				<ul id="logged-out-menu" class="nav navbar-nav">
+				<ul id="logged-out-menu" class="nav navbar-nav navbar-right">
 					<!-- IF allowRegistration -->
 					<li>
 						<a href="{relative_path}/register">
@@ -129,7 +129,7 @@
 				</ul>
 				<!-- ENDIF loggedIn -->
 				<!-- IF searchEnabled -->
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav navbar-right">
 					<li>
 						<form id="search-form" class="navbar-form navbar-right hidden-xs" role="search" method="GET" action="">
 							<div class="hide" id="search-fields">
@@ -149,7 +149,7 @@
 				</ul>
 				<!-- ENDIF searchEnabled -->
 
-				<ul class="nav navbar-nav hidden-xs">
+				<ul class="nav navbar-nav navbar-right hidden-xs">
 					<li>
 						<a href="#" id="reconnect" class="hide" title="Connection to {title} has been lost, attempting to reconnect...">
 							<i class="fa fa-check"></i>
@@ -157,7 +157,7 @@
 					</li>
 				</ul>
 
-				<ul class="nav navbar-nav pagination-block invisible visible-lg visible-md">
+				<ul class="nav navbar-nav navbar-right pagination-block invisible visible-lg visible-md">
 					<li class="dropdown">
 						<i class="fa fa-angle-double-up pointer fa-fw pagetop"></i>
 						<i class="fa fa-angle-up pointer fa-fw pageup"></i>
@@ -198,7 +198,7 @@
 				</ul>
 
 				<!-- ELSE -->
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav navbar-right">
 					<li>
 						<a href="{relative_path}/login">
 							<i class="fa fa-sign-in visible-xs-inline"></i>

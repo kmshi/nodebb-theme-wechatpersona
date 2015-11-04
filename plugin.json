@@ -6,9 +6,10 @@
 		"vendor": "static/vendor"
 	},
 	"css": [
-	  "static/vendor/css/sidebar.css"
 	],
 	"scripts": [
-	  "static/vendor/js/sidebar.js"
+		"static/lib/persona.js",
+		"static/lib/modules/nprogress.js",
+		"static/lib/modules/autohidingnavbar.min.js"
 	]
 }
