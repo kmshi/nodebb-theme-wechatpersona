@@ -1,6 +1,16 @@
 {
 	"id": "nodebb-theme-wechatpersona",
+	"library": "./lib/theme.js",
 	"hooks": [
+		{
+			"hook": "filter:user.create", "method": "userCreate"
+		},
+		{
+			"hook": "filter:userlist.get", "method": "userListGet"
+		},
+		{
+			"hook": "filter:users.get", "method": "usersGet"
+		}
 	],
 	"staticDirs": {
 		"vendor": "static/vendor"
