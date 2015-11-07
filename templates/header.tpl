@@ -11,6 +11,17 @@
 	<link<!-- IF linkTags.link --> link="{linkTags.link}"<!-- ENDIF linkTags.link --><!-- IF linkTags.rel --> rel="{linkTags.rel}"<!-- ENDIF linkTags.rel --><!-- IF linkTags.type --> type="{linkTags.type}"<!-- ENDIF linkTags.type --><!-- IF linkTags.href --> href="{linkTags.href}"<!-- ENDIF linkTags.href --> />
 	<!-- END linkTags -->
 
+    <!-- Bootcards CSS file (different for desktop, iOS and Android, included Bootstrap CSS) -->
+	<!-- IF isAndroid -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/bootcards/1.1.2/css/bootcards-android.min.css" rel="stylesheet" type="text/css" />
+    <!-- ENDIF isAndroid -->
+    <!-- IF isIos -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/bootcards/1.1.2/css/bootcards-ios.min.css" rel="stylesheet" type="text/css" />
+    <!-- ENDIF isIos -->
+    <!-- IF isDesktop -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/bootcards/1.1.2/css/bootcards-desktop.min.css" rel="stylesheet" type="text/css" />
+    <!-- ENDIF isDesktop -->
+
 	<!--[if lt IE 9]>
   		<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/2.3.0/es5-shim.min.js"></script>
   		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
@@ -28,6 +39,9 @@
 	</script>
 	<script src="{relative_path}/nodebb.min.js?{script-buster}"></script>
 	<!-- IMPORT partials/requirejs-config.tpl -->
+
+	<!-- Bootcards JS file -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootcards/1.1.2/js/bootcards.min.js"></script>
 	
 	<!-- IF useCustomJS -->
 	{{customJS}}

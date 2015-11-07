@@ -11,7 +11,7 @@
 				</a>
 				<!-- IF showSiteTitle -->
 				<a href="{relative_path}/">
-					<h1 class="navbar-brand forum-title">{title} in Wechat</h1>
+					<h1 class="navbar-brand forum-title">{title} {isAndroid}</h1>
 				</a>
 				<!-- ENDIF showSiteTitle -->
 
