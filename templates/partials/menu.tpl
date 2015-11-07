@@ -5,20 +5,21 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-
-				<a href="<!-- IF brand:logo:url -->{brand:logo:url}<!-- ELSE -->{relative_path}/<!-- ENDIF brand:logo:url -->">
-					<img alt="{brand:logo:alt}" class="{brand:logo:display} forum-logo" src="{brand:logo}" />
-				</a>
-				<!-- IF showSiteTitle -->
-				<a href="{relative_path}/">
-					<h1 class="navbar-brand forum-title">{title} {isAndroid}</h1>
-				</a>
-				<!-- ENDIF showSiteTitle -->
-
-				<div component="navbar/title" class="visible-xs">
-					<span></span>
-				</div>
 			</div>
+
+            <a href="<!-- IF brand:logo:url -->{brand:logo:url}<!-- ELSE -->{relative_path}/<!-- ENDIF brand:logo:url -->">
+                <img alt="{brand:logo:alt}" class="{brand:logo:display} forum-logo" src="{brand:logo}" />
+            </a>
+
+            <!-- IF showSiteTitle -->
+            <a href="{relative_path}/">
+                <h1 class="navbar-brand forum-title">{title} <!-- IF isWeChat -->In WeChat<!-- ENDIF isWeChat --></h1>
+            </a>
+            <!-- ENDIF showSiteTitle -->
+
+            <div component="navbar/title" class="visible-xs">
+                <span></span>
+            </div>
 
 			<div class="navbar-slide-in" id="nav-dropdown">
 				<!-- IF !maintenanceHeader -->
