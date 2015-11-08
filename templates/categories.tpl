@@ -6,16 +6,17 @@
 	<!-- END categories -->
 </ul>
 
+<!-- bootcards style here
 <div class="row">
 
 	<div class="bootcards-cards">
 
-		<div class="col-sm-6">
+		<div class="col-sm-12">
 
 			<div class="panel panel-default bootcards-summary">
 
 				<div class="panel-heading">
-					<h3 class="panel-title">Dashboard</h3>
+					<h3 class="panel-title">[[category:categories]]</h3>
 				</div>
 
 				<div class="panel-body">
@@ -45,16 +46,10 @@
 				</div>
 
 			</div>
-
-		</div>
-
-		<div class="col-sm-6">
-
-			<h1>Charts section here!</h1>
-
 		</div>
 
 	</div>
 
 </div>
+-->
 

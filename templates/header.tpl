@@ -21,9 +21,8 @@
     <!-- IF isDesktop -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/bootcards/1.1.2/css/bootcards-desktop.min.css" rel="stylesheet" type="text/css" />
     <!-- ENDIF isDesktop -->
-    -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/bootcards/1.1.2/css/bootcards-desktop.min.css" rel="stylesheet" type="text/css" />
-
+    -->
 	<!--[if lt IE 9]>
   		<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/2.3.0/es5-shim.min.js"></script>
   		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>

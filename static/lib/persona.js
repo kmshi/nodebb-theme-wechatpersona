@@ -47,9 +47,17 @@ $(document).ready(function() {
 			}
 		});
 
-		$(window).on('action:ajaxify.start', function() {
+		$(window).on('action:ajaxify.start', function(event,params) {
 			if ($('body').hasClass('slide-in')) {
 				$('.navbar-header button').click();
+			}
+
+			if(params.url === ''){
+				$('.forum-title').removeClass('hidden-xs');
+				$('.history-back').addClass('hidden').removeClass('visible-xs');
+			}else{
+				$('.forum-title').addClass('hidden-xs');
+				$('.history-back').removeClass('hidden').addClass('visible-xs');
 			}
 
 			NProgress.set(0.7);

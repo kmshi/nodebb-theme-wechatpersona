@@ -10,11 +10,17 @@
                     <img alt="{brand:logo:alt}" class="{brand:logo:display} forum-logo" src="{brand:logo}" />
                 </a>
 
+                <a type="button" class="navbar-brand navbar-left pull-left visible-xs history-back" onclick="history.back()">
+                    <i class="fa fa-lg fa-chevron-left"></i>
+                </a>
+
                 <!-- IF showSiteTitle -->
                 <a href="{relative_path}/">
-                    <h1 class="navbar-brand forum-title">{title} {isWeChat}</h1>
+                    <h1 class="navbar-brand forum-title">{title}</h1>
                 </a>
                 <!-- ENDIF showSiteTitle -->
+
+
 
                 <div component="navbar/title" class="visible-xs">
                     <span></span>
