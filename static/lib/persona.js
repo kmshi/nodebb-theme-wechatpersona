@@ -57,6 +57,7 @@ $(document).ready(function() {
 
 		$(window).on('action:ajaxify.end', function() {
 			NProgress.done();
+			$(".navbar-fixed-top").autoHidingNavbar('show');
 		});
 
 		$(window).on('filter:taskbar.push', function(ev, data) {

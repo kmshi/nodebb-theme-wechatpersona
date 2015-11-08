@@ -13,9 +13,6 @@
 		},
 		{
 			"hook": "static:app.load", "method": "checkDeviceType"
-		},
-		{
-			"hook": "filter:config.get", "method": "configGet"
 		}
 	],
 	"staticDirs": {

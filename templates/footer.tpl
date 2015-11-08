@@ -17,22 +17,6 @@
 	<div class="alert-window alert-right-top"></div>
 	<div class="alert-window alert-right-bottom"></div>
 
-	<!-- fixed tabbed footer -->
-    <div class="navbar navbar-default navbar-fixed-bottom">
-        <div class="container">
-            <div class="btn-group">
-                <a href="#" class="btn btn-default">
-                    <i class="fa fa-2x fa-bullhorn"></i>
-                    abc
-                </a>
-                <a href="#" class="btn btn-default">
-                    <i class="fa fa-2x fa-comments-o"></i>
-                    efg
-                </a>
-            </div>
-        </div>
-    </div>
-
 	<script>
 		require(['forum/footer']);
 	</script>
