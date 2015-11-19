@@ -38,7 +38,12 @@
 			user: JSON.parse('{{userJSON}}')
 		};
 	</script>
-	<script src="{relative_path}/nodebb.min.js?{script-buster}"></script>
+
+	<!-- IF isWeChat -->
+    <script src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <!-- ENDIF isWeChat -->
+
+    <script src="{relative_path}/nodebb.min.js?{script-buster}"></script>
 	<!-- IMPORT partials/requirejs-config.tpl -->
 
 	<!-- Bootcards JS file
