@@ -43,6 +43,11 @@
     <script src="//res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <!-- ENDIF isWeChat -->
 
+    <!-- Baidu Map JS file
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=302e5805ba2c3f28ad3184097a425def"></script>
+    -->
+    <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script>
+
     <script src="{relative_path}/nodebb.min.js?{script-buster}"></script>
 	<!-- IMPORT partials/requirejs-config.tpl -->
 
