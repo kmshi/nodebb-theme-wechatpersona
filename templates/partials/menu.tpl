@@ -10,7 +10,7 @@
                     <img alt="{brand:logo:alt}" class="{brand:logo:display} forum-logo" src="{brand:logo}" />
                 </a>
 
-                <a type="button" class="navbar-brand navbar-left pull-left visible-xs history-back" onclick="history.back()">
+                <a type="button" class="navbar-brand navbar-left pull-left visible-xs history-back">
                     <i class="fa fa-lg fa-chevron-left"></i>
                 </a>
 

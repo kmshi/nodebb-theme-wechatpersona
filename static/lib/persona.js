@@ -52,7 +52,8 @@ $(document).ready(function() {
 				$('.navbar-header button').click();
 			}
 
-			if(params.url === ''){
+			if (!window.firstUrl) window.firstUrl = params.url;
+			if(params.url === window.firstUrl){
 				$('.forum-title').removeClass('hidden-xs');
 				$('.history-back').addClass('hidden').removeClass('visible-xs');
 			}else{
@@ -61,6 +62,10 @@ $(document).ready(function() {
 			}
 
 			NProgress.set(0.7);
+		});
+
+		$(document).on('click','.history-back',function(){
+			window.history.back();
 		});
 
 		$(window).on('action:ajaxify.end', function() {
