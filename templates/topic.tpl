@@ -68,7 +68,7 @@
 <!-- fixed tabbed footer -->
 <div class="navbar navbar-default navbar-fixed-bottom visible-xs">
     <div class="container-fluid">
-        <div class="btn-group btn-group-sm btn-group-justified" style="margin-top:8px;">
+        <div class="btn-group btn-group-justified" style="margin-top:2px;">
             <!-- IMPORT partials/topic/reply-button.tpl -->
         </div>
     </div>

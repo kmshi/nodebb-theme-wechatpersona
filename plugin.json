@@ -18,7 +18,8 @@
 	"staticDirs": {
 		"vendor": "static/vendor"
 	},
-	"css": [
+	"css":[
+		"static/css/bootcards-desktop.css"
 	],
 	"scripts": [
 		"static/lib/persona.js",

@@ -50,11 +50,12 @@
 <!-- fixed tabbed footer -->
 <div class="navbar navbar-default navbar-fixed-bottom visible-xs clearfix">
     <div class="container-fluid">
-        <div class="btn-group btn-group-sm btn-group-justified" style="margin-top:8px;">
+        <div class="btn-group btn-group-justified" style="margin-top:2px;">
             <!-- IF privileges.topics:create -->
             <button id="new_topic" class="btn btn-primary" style="width:100%">[[category:new_topic_button]]</button>
             <!-- ELSE -->
                 <!-- IF !loggedIn -->
+                <a href="#" class="btn btn-primary" onclick="window.location='{config.relative_path}/auth/wechat'">Wechat OneClick</a>
                 <a href="{config.relative_path}/login" class="btn btn-primary">[[category:guest-login-post]]</a>
                 <!-- ENDIF !loggedIn -->
             <!-- ENDIF privileges.topics:create -->
