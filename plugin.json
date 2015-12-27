@@ -10,9 +10,6 @@
 		},
 		{
 			"hook": "filter:users.get", "method": "usersGet"
-		},
-		{
-			"hook": "static:app.load", "method": "checkDeviceType"
 		}
 	],
 	"staticDirs": {
