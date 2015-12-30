@@ -17,7 +17,6 @@
 <!-- ELSE -->
 
 <!-- IF !privileges.topics:reply -->
-<a href="#" class="btn btn-primary" onclick="window.location='{config.relative_path}/auth/wechat'">微信一键[[topic:guest-login-reply]]</a>
 <a href="{config.relative_path}/login" class="btn btn-primary">[[topic:guest-login-reply]]</a>
 <!-- ENDIF !privileges.topics:reply -->
 
