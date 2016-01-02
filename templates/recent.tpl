@@ -33,7 +33,7 @@
 <!-- fixed tabbed footer -->
 <div class="navbar navbar-primary navbar-fixed-bottom visible-xs clearfix">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" style="margin-top: 20px !important;">
             <!-- IF loggedIn -->
         	<button id="new_topic" class="btn btn-primary btn-block">[[category:new_topic_button]]</button>
         	<!-- ELSE -->

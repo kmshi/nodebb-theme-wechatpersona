@@ -68,7 +68,7 @@
 <!-- fixed tabbed footer -->
 <div class="navbar navbar-primary navbar-fixed-bottom visible-xs">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" style="margin-top: 20px !important;">
             <a component="topic/reply" class="btn btn-primary btn-block <!-- IF !privileges.topics:reply -->hidden<!-- ENDIF !privileges.topics:reply -->">[[topic:reply]]</a>
 
             <!-- IF loggedIn -->
