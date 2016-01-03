@@ -35,10 +35,10 @@
     <div class="container-fluid">
         <div class="row" style="margin-top: 20px !important;">
             <!-- IF loggedIn -->
-        	<button id="new_topic" class="btn btn-primary btn-block">[[category:new_topic_button]]</button>
+        	<button id="new_topic" class="btn btn-lg btn-success btn-block">[[category:new_topic_button]]</button>
         	<!-- ELSE -->
-        	<a href="#" class="btn btn-primary btn-block visible-wx" onclick="window.location='{config.relative_path}/auth/wechat'">微信一键[[category:guest-login-post]]</a>
-        	<a href="{config.relative_path}/login" class="btn btn-primary btn-block hidden-wx">[[category:guest-login-post]]</a>
+        	<a target="_top" href="{config.relative_path}/auth/wechat" class="btn btn-lg btn-success btn-block visible-wx">微信一键[[category:guest-login-post]]</a>
+        	<a href="{config.relative_path}/login" class="btn btn-lg btn-success btn-block hidden-wx">[[category:guest-login-post]]</a>
         	<!-- ENDIF loggedIn -->
         </div>
     </div>

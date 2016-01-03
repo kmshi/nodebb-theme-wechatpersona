@@ -65,29 +65,40 @@
 
 <!-- IMPORT partials/variables/topic.tpl -->
 
+<div class="well well-sm row">
+    <div class="col-xs-6 col-sm-3 col-sm-offset-3">
+        <img class="img-responsive" src="{config.relative_path}/showQRCode" />
+    </div>
+    <div class="col-xs-6 col-sm-3">
+        <p>长按左边二维码并关注,红包等你拿</p>
+        <p>马上减肥,办法问我,快来一起挑战吧</p>
+        <p>成就你的创业故事</p>
+    </div>
+</div>
+
 <!-- fixed tabbed footer -->
 <div class="navbar navbar-primary navbar-fixed-bottom visible-xs">
     <div class="container-fluid">
         <div class="row" style="margin-top: 20px !important;">
-            <a component="topic/reply" class="btn btn-primary btn-block <!-- IF !privileges.topics:reply -->hidden<!-- ENDIF !privileges.topics:reply -->">[[topic:reply]]</a>
+            <a component="topic/reply" class="btn btn-lg btn-success btn-block <!-- IF !privileges.topics:reply -->hidden<!-- ENDIF !privileges.topics:reply -->">[[topic:reply]]</a>
 
             <!-- IF loggedIn -->
 
             <!-- IF !privileges.topics:reply -->
             <!-- IF locked -->
-            <a component="topic/reply/locked" class="btn btn-primary btn-block" disabled><i class="fa fa-lock"></i> [[topic:locked]]</a>
+            <a component="topic/reply/locked" class="btn btn-lg btn-success btn-block" disabled><i class="fa fa-lock"></i> [[topic:locked]]</a>
             <!-- ENDIF locked -->
             <!-- ENDIF !privileges.topics:reply -->
 
             <!-- IF !locked -->
-            <a component="topic/reply/locked" class="btn btn-primary btn-block hidden" disabled><i class="fa fa-lock"></i> [[topic:locked]]</a>
+            <a component="topic/reply/locked" class="btn btn-lg btn-success btn-block hidden" disabled><i class="fa fa-lock"></i> [[topic:locked]]</a>
             <!-- ENDIF !locked -->
 
             <!-- ELSE -->
 
             <!-- IF !privileges.topics:reply -->
-            <a href="#" class="btn btn-primary btn-block visible-wx" onclick="window.location='{config.relative_path}/auth/wechat'">微信一键[[topic:guest-login-reply]]</a>
-            <a href="{config.relative_path}/login" class="btn btn-primary btn-block hidden-wx">[[topic:guest-login-reply]]</a>
+            <a target="_top" href="{config.relative_path}/auth/wechat" class="btn btn-lg btn-success btn-block visible-wx">微信一键[[topic:guest-login-reply]]</a>
+            <a href="{config.relative_path}/login" class="btn btn-lg btn-success btn-block hidden-wx">[[topic:guest-login-reply]]</a>
             <!-- ENDIF !privileges.topics:reply -->
 
             <!-- ENDIF loggedIn -->
