@@ -65,7 +65,7 @@
 </div>
 
 <!-- fixed tabbed footer -->
-<div class="navbar navbar-primary navbar-fixed-bottom visible-xs clearfix visible-wx">
+<div class="navbar navbar-primary navbar-fixed-bottom clearfix visible-wx">
     <div class="container-fluid">
         <div class="row" style="margin-top: 20px !important;">
         	<a rel="nofollow" target="_top" href="{config.relative_path}/auth/wechat" class="btn btn-success btn-lg btn-block">微信一键[[global:login]]</a>
